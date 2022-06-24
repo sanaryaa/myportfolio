@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,84 +8,124 @@
     <link rel="stylesheet" href="port.css">
     <title>My portfolio |</title>
 </head>
+
 <body>
-  <!--start of navigation bar:-->
-  <section class="sec1">
-    <div class="logo">
-        <a href="#">..Sanarya..</a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-  </section>
-  <section class="sec2">
+    <!--start of navigation bar:-->
+    <section class="sec1">
+        <div class="logo">
+            <a href="#">..Sanarya..</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="sec2">
         <div class="back">
             <img src="https://images.pexels.com/photos/9514641/pexels-photo-9514641.jpeg" alt="women">
         </div>
         <div class="front">
-            <p>Welcome I am  </p>
+            <p>Welcome I am </p>
             <h1>Sanarya H Ali</h1>
             <p>Web Developer & UI/UX Designer</p>
         </div>
-  </section>
-  <!--start of aboout section-->
-  <section id="about">
-    <div class="description">
-        <h3>About Me</h3>
-    <p>I am Sanarya, Frontend developer and UI UX designer with a background in software engineering</p>
-    <button><a href="">Download my CV</a></button>
-    </div>
-    <div class="me">
-        <div class="back">
-            <img src="https://images.pexels.com/photos/9514668/pexels-photo-9514668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    </section>
+    <!--start of aboout section-->
+    <section id="about">
+        <div class="description">
+            <h3>About Me</h3>
+            <p>I am Sanarya, Frontend developer and UI UX designer with a background in software engineering</p>
+            <a href=""><button>Download my CV</button></a>
         </div>
-    </div>
-  </section>
-   <!--end of aboout section-->
-   <!--start of skill section-->
-   <section id="skills">
-    <h3>My Skills</h3>
-    <div class="boxs">
-        <button  onclick="prevCard()"><img src="https://img.icons8.com/ios/40/000000/back--v1.png" /></button>
-        <div class="box">
-            <img src="https://img.icons8.com/ios/100/000000/html-5--v2.png"/>
-            <h4>HTML</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure dolorum laboriosam ullam ut omnis!</p>
+        <div class="me">
+            <div class="back">
+                <img src="https://images.pexels.com/photos/9514668/pexels-photo-9514668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+            </div>
         </div>
-        <div class="box">
-            <img src="https://img.icons8.com/ios/100/000000/css3.png"/>
-            <h4>CSS</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro quaerat tempora numquam officia aperiam!</p>
+    </section>
+    <!--end of aboout section-->
+    <!--start of skill section-->
+    <section id="skills">
+        <h3>My Skills</h3>
+        <div class="boxs">
+            <button onclick="prevCard()"><img src="https://img.icons8.com/ios/40/000000/back--v1.png" /></button>
+            <div class="box">
+                <img src="https://img.icons8.com/ios/100/000000/html-5--v2.png" />
+                <h4>HTML</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure dolorum laboriosam ullam ut omnis!
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios/100/000000/css3.png" />
+                <h4>CSS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro quaerat tempora numquam officia
+                    aperiam!</p>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios/100/000000/javascript--v1.png" />
+                <h4>JS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias laborum temporibus minus.
+                    Eveniet, ratione.</p>
+            </div>
+            <div class="box active">
+                <img src="https://img.icons8.com/ios/100/000000/php-logo.png" />
+                <h4>PHP</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae corrupti optio nisi unde
+                    officia!</p>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios/100/000000/react-native--v1.png" />
+                <h4>React JS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor accusamus debitis odio id ab.</p>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios/100/000000/figma--v1.png" />
+                <h4>Design</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum in eum, delectus tempore
+                    consequuntur.</p>
+            </div>
+            <button onclick="nextCard()"><img src="https://img.icons8.com/ios/50/000000/more-than.png" /></button>
         </div>
-        <div class="box">
-            <img src="https://img.icons8.com/ios/100/000000/javascript--v1.png"/>
-            <h4>JS</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias laborum temporibus minus. Eveniet, ratione.</p>
+        <!--end of skill section-->
+    </section>
+    <!--start of my project section-->
+    <section id="project">
+
+    </section>
+    <!--end of project section-->
+    <!--start of contact section-->
+    <!-- <section id="contact">
+        <div class="cont fb">
+            <a href="https://www.facebook.com/S4n.uuu"><img src="https://img.icons8.com/ios/50/000000/facebook-new.png"/></a>
+            <h5><a href="https://www.facebook.com/S4n.uuu">Sanarya</a></h5>
         </div>
-        <div class="box active">
-            <img src="https://img.icons8.com/ios/100/000000/php-logo.png"/>
-            <h4>PHP</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quae corrupti optio nisi unde officia!</p>
+        <div class="cont insta">
+            <a href="https://www.instagram.com/1.sanarya.1/"><img src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/></a>
+            <h5><a href="https://www.instagram.com/1.sanarya.1/">1.sanarya.1</a></h5>
         </div>
-        <div class="box">
-            <img src="https://img.icons8.com/ios/100/000000/react-native--v1.png"/>
-            <h4>React JS</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor accusamus debitis odio id ab.</p>
+        <div class="cont git">
+            <a href="https://github.com/sanaryaa"><img src="https://img.icons8.com/ios/50/000000/github--v1.png"/></a>
+            <h5><a href="https://github.com/sanaryaa">sanaryaa</a></h5>
         </div>
-        <div class="box">
-            <img src="https://img.icons8.com/ios/100/000000/figma--v1.png"/>
-            <h4>Design</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum in eum, delectus tempore consequuntur.</p>
+        <div class="cont gmail">
+            <a href="mailto:sanaryahamakarim1@gmail.com"><img src="https://img.icons8.com/ios/50/000000/gmail--v1.png"/></a>
+            <h5><a href="mailto:sanaryahamakarim1@gmail.com">sanaryahamakarim1@gmail.com</a></h5>
         </div>
-        <button onclick="nextCard()"><img src="https://img.icons8.com/ios/50/000000/more-than.png"/></button>
-    </div>
-    <!--end of skill section-->
-   </section>
-   <script src="port.js"></script>
+    </section> -->
+    <footer>
+        <div class="my-social">
+            <a href="https://www.facebook.com/S4n.uuu"><img src="https://img.icons8.com/ios/30/000000/facebook-f.png"/></a>
+            <a href="https://github.com/sanaryaa"><img src="https://img.icons8.com/ios/30/000000/github--v1.png"/></a>
+            <a href="https://mobile.twitter.com/Sanarya_11"><img src="https://img.icons8.com/ios/30/000000/twitter--v1.png"/></a>
+        </div>
+        <h6> <pre>©2022.created by<span>Sanarya.</span></pre></h6>
+    </footer>
+    <script src="port.js"></script>
 </body>
+
 </html>

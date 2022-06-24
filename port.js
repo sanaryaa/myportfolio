@@ -1,3 +1,5 @@
+
+/*start of slider*/
 let current=0;
 showCard(current);
 function nextCard(m){
@@ -25,3 +27,4 @@ function showCard(m){
     }
     cards[m].style.display="block";
 }
+/*end of slider*/

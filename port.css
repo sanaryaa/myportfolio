@@ -9,19 +9,13 @@
 body{
     width: 100%;
     height: 150vh;
-    /* background-image:radial-gradient(circle at top right ,rgb(252, 221, 226) 7% ,transparent 7%),
-    radial-gradient(circle at 20% 20% ,rgb(224, 224, 131) 5% ,transparent 5%),
-    radial-gradient(circle at 75% 80% ,rgb(168, 168, 209) 2%,transparent 2%),
-    radial-gradient(circle at 30% 70% ,rgb(170, 196, 170) 3% ,transparent 3%),
-    radial-gradient(circle at 15% 95% ,rgb(212, 186, 138) 3% ,transparent 3%),
-    radial-gradient(circle at 67% 30% , grey 4% ,transparent 4%);
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    backdrop-filter: blur(1px); */
-    
-    
 }
+   
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0);
+    }
+  }
 /* start of navigation*/
 .sec1{
     width: 90%;
@@ -77,6 +71,11 @@ body{
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-size: 19px;
+}
+.sec1 nav ul li a:hover{
+    font-size:21px;
+    transition: 0.5s ;
+    transition-timing-function: ease-out;
 }
 /*end of navigation*/
 /*start of main*/
@@ -163,22 +162,27 @@ body{
     font-family: 'Ubuntu', sans-serif;
     margin-top: 5%;
 }
-#about .description button{
-    width: 30%;
+#about .description a button{
+    width: 120%;
     background-color: white;
     line-height: 2.5rem;
     border: 0.5px solid #d8b37b;
     border-radius: 7px;
-    margin-top: 4%;
-
-}
-#about .description button a{
     text-decoration: none;
     color: #5a482c;
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
+    margin-top: 15%;
+
+}
+#about .description a button:hover{
+    background-color: #5a482c;
+    border: none;
+    color: white;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
 }
 #about .me{
     width: 43%;
@@ -230,7 +234,7 @@ body{
     justify-content: center;    
 }
 #skills .boxs .box{
-    width: 55%;
+    width: 45%;
     height: 80%;
     text-align: center;
     border-radius: 10px 45px 10px 45px;
@@ -240,6 +244,7 @@ body{
     margin-right: 5%;
     display: none;
 }
+
 #skills .boxs .box h4{
     font-size: 30px;
     font-family: 'Andika New Basic', sans-serif;
@@ -249,6 +254,8 @@ body{
     color: #30220c;
 }
 #skills .boxs .box p{
+    width: 60%;
+    margin: auto;
     color: rgb(70, 70, 70);
     font-size: 15px;
     font-family: 'Anek Tamil', sans-serif;
@@ -261,3 +268,53 @@ body{
 }
 /*end of skill section*/
 /*start of project section*/
+/*end of project section*/
+/*start of contact section*/
+#contact{
+    width: 100%;
+    height: 80vh;
+    border: 1px solid black;
+}
+/*end of project section*/
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(183, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1%;
+}
+footer div{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer div img{
+    border: 1px solid black;
+    padding:1.5px ;
+    border-radius: 50%;
+    margin: 2px;
+}
+footer div img:hover{
+    background-color: #ac9b83;
+}
+footer h6{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    color: rgb(60, 57, 57);
+    font-size: 12px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer h6 span{
+    color: black;
+}
