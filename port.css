@@ -10,12 +10,6 @@ body{
     width: 100%;
     height: 150vh;
 }
-   
-  @keyframes slideIn {
-    100% {
-      transform: translateY(0);
-    }
-  }
 /* start of navigation*/
 .sec1{
     width: 90%;
@@ -77,41 +71,71 @@ body{
     transition: 0.5s ;
     transition-timing-function: ease-out;
 }
+@media (max-width:850px) {
+    .sec1{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .sec1 .logo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .sec1 nav{
+        display: none;
+    }
+   
+}
+@media (max-width:450px) {
+    .sec1{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .sec1 nav{
+        display: none;
+    }
+}
 /*end of navigation*/
 /*start of main*/
 .sec2{
     width: 100%;
-    height: 125vh;
-    display: flex;
-    align-items: center;
+    height: 100vh;
     padding-left: 7%;
     padding-right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sec2  .back{
-    width: 30%;
-    height: 90%;
-    position: absolute;
-    top: 40%;
-    left: 18%;
-}
-.sec2 .back img{
     width: 100%;
-    height: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    background-size: 35%;
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/9514641/pexels-photo-9514641.jpeg);
 }
 .sec2  .front{
     width: 50%;
-    height: 75%;
-    position: relative;
+    height:100%;
+    top: 10%;
+    left: 50%;
+    position: absolute;
     z-index: 1;
-    background-image: linear-gradient(to right,#D9A962 15% ,transparent 15%);
-    top: 2%;
-    left: 42%;
+    background-image: linear-gradient(to right,#D9A962 13% ,transparent 13%);
+    background-origin: 10%;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 .sec2  .front p{
     color: rgb(70, 70, 70);
@@ -127,6 +151,44 @@ body{
     font-family: 'Big Shoulders Display', cursive;
     line-height: 5rem;
 }
+@media (max-width:750px) {
+    .sec2{
+        height:70vh;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .sec2  .back{
+        width: 35%;
+        height: 50%;
+        position: absolute;
+        top: 19%;
+        left: 18%;
+        border-radius: 5px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(https://images.pexels.com/photos/9514641/pexels-photo-9514641.jpeg);
+    }
+    .sec2  .front{
+        width: 50%;
+        height:65%;
+        position: relative;
+        z-index: 1;
+        background-image: linear-gradient(to right,#D9A962 15% ,transparent 15%);
+        left: 40%;
+        bottom: 10%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sec2  .front p{
+        font-size: 12px;
+    }
+    .sec2  .front h1{
+        font-size: 45px;
+    }
+}
 /*about me*/
 #about {
     width: 100%;
@@ -136,16 +198,17 @@ body{
     justify-content: center;
     padding-left: 7%;
     padding-right: 7%;
-
+    margin-top: 5%;
+   
 }
 #about .description{
     width: 43%;
-    height: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 10%;
-    text-align: center;
+    text-align: center
 }
 #about .description h3{
     font-size: 45px;
@@ -192,7 +255,7 @@ body{
     justify-content: center;
 }
 #about .me .back{
-    width: 55%;
+    width: 60%;
     height: 75%;
     border: 5px solid #B38B50;
     position: relative;
@@ -207,11 +270,26 @@ body{
     left: 10%;
     border-radius: 5px;
 }
+@media (max-width:750px) {
+    #about .description h3{
+        font-size: 38px;
+    }
+    #about .description p{
+        font-size: 18px;
+    }
+    #about .me .back{
+        width: 95%;
+        height: 60%;
+        border: 5px solid #B38B50;
+        position: relative;
+        border-radius: 5px;
+    }
+}
 /*end of about me section*/
 /*start of skill section*/
 #skills{
     width: 100%;
-    height: 60%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,19 +305,20 @@ body{
     line-height: 5rem;
 }
 #skills .boxs{
-    width: 70%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
 }
-#skills .boxs .box{
-    width: 45%;
-    height: 80%;
+
+#skills .boxs  .box{
+    width: 30%;
+    height: 70%;
     text-align: center;
     border-radius: 10px 45px 10px 45px;
-    padding-top: 10%;
     background-color: #7e5d2a74;
+    padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     display: none;
@@ -266,6 +345,12 @@ body{
     border: none;
     background-color: transparent;
 }
+@media (max-width:750px) {
+    #skills .boxs .box{
+        width:45% ;
+    }
+}
+
 /*end of skill section*/
 /*start of project section*/
 /*end of project section*/
