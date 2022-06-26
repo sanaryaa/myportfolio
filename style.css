@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 150vh;
+}
+
+/* start of navigation*/
+.sec1 {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    top: -1px;
+    z-index: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 1px solid rgba(227, 192, 127, 0.701);
+}
+
+.sec1 .logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5%;
+}
+
+.sec1 .logo a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Fascinate', cursive;
+    font-size: 23px;
+}
+
+.sec1 nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sec1 nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sec1 nav ul li {
+    width: 25%;
+    text-align: center;
+    list-style: none;
+}
+
+.sec1 nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+}
+
+.sec1 nav ul li a:hover {
+    font-size: 21px;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+@media (max-width:650px) {
+    .sec1 {
+        height: 8vh;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .sec1 .logo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .sec1 nav {
+        display: none;
+    }
+
+}
+
+/*end of navigation*/
+/*start of main*/
+.sec2 {
+    width: 100%;
+    height: 100vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2 .back {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    background-size: 40%;
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/9514641/pexels-photo-9514641.jpeg);
+}
+
+.sec2 .front {
+    width: 50%;
+    height: 90%;
+    top: 13%;
+    left: 48%;
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(to right, #D9A962 13%, transparent 13%);
+    background-origin: 10%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sec2 .front p {
+    color: rgb(70, 70, 70);
+    font-size: 15px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sec2 .front h1 {
+    font-size: 50px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 5rem;
+}
+
+@media (max-width:1000px) {
+    .sec2 {
+        height: 70vh;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .sec2 .front {
+        width: 50%;
+        height: 85%;
+        top: 15%;
+        left: 50%;
+    }
+
+    .sec2 .front p {
+        font-size: 12px;
+    }
+
+    .sec2 .front h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:450px) {
+    .sec2 {
+        height: 40vh;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .sec2 .front {
+        width: 50%;
+        height: 65%;
+        top: 22%;
+        left: 50%;
+    }
+
+    .sec2 .front p {
+        font-size: 8px;
+    }
+
+    .sec2 .front h1 {
+        font-size: 30px;
+    }
+
+}
+
+/*about me*/
+#about {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 5%;
+    gap: 2px;
+}
+
+#about .description {
+    width: 43%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center
+}
+
+#about .description h3 {
+    font-size: 45px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 5rem;
+}
+
+#about .description p {
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 5%;
+}
+
+#about .description a button {
+    width: 120%;
+    background-color: white;
+    line-height: 2.5rem;
+    border: 0.5px solid #d8b37b;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #5a482c;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin-top: 15%;
+
+}
+
+#about .description a button:hover {
+    background-color: #5a482c;
+    border: none;
+    color: white;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+#about .me {
+    width: 43%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .me .back {
+    width: 60%;
+    height: 75%;
+    border: 5px solid #B38B50;
+    position: relative;
+    border-radius: 5px;
+}
+
+#about .me img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 7%;
+    left: 10%;
+    border-radius: 5px;
+}
+
+@media (max-width:1000px) {
+    #about {
+        height: 70vh;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #about .description h3 {
+        font-size: 30px;
+        line-height: 3rem;
+    }
+
+    #about .description p {
+        font-size: 15px;
+    }
+
+    #about .description a button {
+        width: 110%;
+        line-height: 2rem;
+        font-size: 13px;
+        margin-top: 15%;
+    }
+
+    #about .me {
+        height: 95%;
+    }
+
+    #about .me .back {
+        width: 90%;
+    }
+
+   
+}
+@media (max-width:450px) {
+
+}
+
+/*end of about me section*/
+/*start of skill section*/
+#skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#skills h3 {
+    font-size: 40px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 5rem;
+}
+
+#skills .boxs {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .boxs .box {
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    border-radius: 10px 45px 10px 45px;
+    background-color: #7e5d2a74;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: none;
+}
+
+#skills .boxs .box h4 {
+    font-size: 30px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 3.5rem;
+    color: #30220c;
+}
+
+#skills .boxs .box p {
+    width: 60%;
+    margin: auto;
+    color: rgb(70, 70, 70);
+    font-size: 15px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#skills .boxs button {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width:750px) {
+    #skills .boxs .box {
+        width: 45%;
+    }
+}
+
+/*end of skill section*/
+/*start of project section*/
+#project{
+    width: 100%;
+    height:120vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#project .proj-container{
+    width: 86%;
+    height: 75%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 41% 41%;
+    grid-template-rows : 41% 41%;
+    justify-content: center;
+    align-content: center;
+    gap: 3%;
+    
+}
+#project .proj-container .project{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+#project .proj-container .first{
+    background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#project .proj-container .second{
+    background-image: url(https://images.pexels.com/photos/6929012/pexels-photo-6929012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#project .proj-container .third{
+    background-image: url(https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#project .proj-container .fourth{
+    background-image: url(https://images.pexels.com/photos/4706109/pexels-photo-4706109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#project .proj-container .project .caption .detail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+#project .proj-container .project .caption .detail h5{
+    color: white;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+}
+#project .proj-container .project .caption .detail p{
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-top: 7%;
+}
+#project .proj-container .project .caption .detail  button{
+    width: 120px;
+    line-height: 1.5rem;
+    margin-top: 7%;
+    border-radius: 7px;
+    border: none;
+    background-color:rgba(255, 255, 255, 0.399);
+    filter: blur(80%);
+    cursor: pointer;
+}
+#project .proj-container .project .caption .detail  button:hover{
+    width: 125px;
+    line-height: 1.7rem;
+    
+}
+#project .proj-container .project .caption .detail a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+#project .proj-container .project:hover .caption{
+    display: block;
+}
+#project .proj-container .project .caption{
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.485);
+    display: none;
+}
+#project h3{
+    width: 86%;
+    height: 7%;
+    font-size: 40px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*end of project section*/
+/*start of contact section*/
+#contact {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-image: url(https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 50%;
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#contact .cont-container{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+} 
+#contact .cont-container #cont-form{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align:left;
+}
+#contact .cont-container #cont-form label{
+    color: white;
+    font-size: 20px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 2rem;
+    margin-top: 2%;
+    
+}
+#contact .cont-container #cont-form textarea{
+    width: 60%;
+    border-radius: 7px;
+    margin-top:2% ;
+    
+}
+#contact .cont-container #cont-form input{
+    width: 60%;
+    line-height: 1.5rem;
+    border-radius: 7px;
+    border:none;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.338);
+    background-color: black;
+    padding: 1%;
+    margin-top: 2%;
+    color: white;
+}
+#contact .cont-container #cont-form button{
+    width:30% ;
+    line-height: 2rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+#contact .cont-container .title{
+    width: 50%;
+    height: 20%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 35%;
+    background-color: rgb(44, 60, 37);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .cont-container .title h3{
+    font-size: 40px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 3rem;
+}
+/*end of contact section*/
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(183, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1%;
+    margin-top: 5%;
+}
+
+footer div {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div img {
+    border: 1px solid black;
+    padding: 1.5px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+footer div img:hover {
+    background-color: #ac9b83;
+}
+
+footer h6 {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    color: rgb(60, 57, 57);
+    font-size: 12px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer h6 span {
+    color: black;
+}
