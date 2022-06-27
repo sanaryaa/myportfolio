@@ -177,11 +177,15 @@ body {
     }
 
     .sec2 .front p {
+        text-align: center;
+        width: 50%;
         font-size: 12px;
     }
 
     .sec2 .front h1 {
-        font-size: 40px;
+        text-align: center;
+        font-size: 35px;
+        line-height: 3rem;
     }
 }
 
@@ -194,9 +198,9 @@ body {
 
     .sec2 .front {
         width: 50%;
-        height: 65%;
-        top: 22%;
+        height: 90%;
         left: 50%;
+        bottom: 15%;
     }
 
     .sec2 .front p {
@@ -204,7 +208,8 @@ body {
     }
 
     .sec2 .front h1 {
-        font-size: 30px;
+        font-size: 20px;
+        line-height: 2.5rem;
     }
 
 }
@@ -323,7 +328,8 @@ body {
     }
 
     #about .me {
-        height: 95%;
+        height: 100%;
+        width: 36%;
     }
 
     #about .me .back {
@@ -333,7 +339,35 @@ body {
    
 }
 @media (max-width:450px) {
+    #about {
+        height: 50vh;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
+    #about .description h3 {
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+
+    #about .description p {
+        font-size: 10px;
+    }
+
+    #about .description a button {
+        width: 105%;
+        line-height: 1.5rem;
+        font-size: 11px;
+        margin-top: 11%;
+    }
+
+    #about .me {
+        height: 90%;
+    }
+
+    #about .me .back {
+        width: 85%;
+    }
 }
 
 /*end of about me section*/
@@ -409,30 +443,30 @@ body {
 
 /*end of skill section*/
 /*start of project section*/
-#project{
+#projects{
     width: 100%;
-    height:120vh;
+    height:90vh;
     padding-left: 7%;
     padding-right: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #d0b589af;
 }
-#project .proj-container{
+#projects .proj-container{
     width: 86%;
-    height: 60%;
+    height: 70%;
     margin-top: 3%;
     display: grid;
     grid-template-columns: 41% 41%;
-    grid-template-rows : 41% 41%;
+    grid-template-rows : 45% 45%;
     justify-content: center;
     align-content: center;
     gap: 3%;
     
 }
-#project .proj-container .project{
+
+#projects .proj-container .project{
     width: 100%;
     height: 100%;
     border-radius: 7px;
@@ -440,19 +474,20 @@ body {
     background-repeat: no-repeat;
     
 }
-#project .proj-container .first{
+#projects .proj-container .first{
     background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-#project .proj-container .second{
+#projects .proj-container .second{
     background-image: url(https://images.pexels.com/photos/6929012/pexels-photo-6929012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-#project .proj-container .third{
+#projects .proj-container .third{
     background-image: url(./img/Screenshot\ \(81\).png);
 }
-#project .proj-container .fourth{
+#projects .proj-container .fourth{
     background-image: url(https://images.pexels.com/photos/4706109/pexels-photo-4706109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-#project .proj-container .project .caption .detail{
+
+#projects .proj-container .project .caption .detail{
     width: 100%;
     height: 100%;
     display: flex;
@@ -463,14 +498,14 @@ body {
     padding-right: 10%;
     text-align: center;
 }
-#project .proj-container .project .caption .detail h5{
+#projects .proj-container .project .caption .detail h5{
     color: white;
     font-family: 'Andika New Basic', sans-serif;
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 25px;
 }
-#project .proj-container .project .caption .detail p{
+#projects .proj-container .project .caption .detail p{
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Ubuntu', sans-serif;
@@ -478,7 +513,7 @@ body {
     font-size: 15px;
     margin-top: 7%;
 }
-#project .proj-container .project .caption .detail  button{
+#projects .proj-container .project .caption .detail  button{
     width: 120px;
     line-height: 1.5rem;
     margin-top: 7%;
@@ -488,12 +523,12 @@ body {
     filter: blur(80%);
     cursor: pointer;
 }
-#project .proj-container .project .caption .detail  button:hover{
+#projects .proj-container .project .caption .detail  button:hover{
     width: 125px;
     line-height: 1.7rem;
     
 }
-#project .proj-container .project .caption .detail a{
+#projects .proj-container .project .caption .detail a{
     text-decoration: none;
     color: black;
     font-family: 'Anek Tamil', sans-serif;
@@ -501,19 +536,19 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
-#project .proj-container .project:hover .caption{
+#projects .proj-container .project:hover .caption{
     display: block;
 }
-#project .proj-container .project .caption{
+#projects .proj-container .project .caption{
     border-radius: 7px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.485);
     display: none;
 }
-#project h3{
+#projects h3{
     width: 86%;
-    height: 7%;
+    height: 5%;
     font-size: 40px;
     font-family: 'Andika New Basic', sans-serif;
     font-family: 'Anek Tamil', sans-serif;
@@ -523,6 +558,47 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media (max-width:1000px) {
+    #projects{
+        height: 170vh;
+    }
+#projects .proj-container{
+    grid-template-columns: 65%;
+    grid-template-rows : 18% 18% 18% 18%;
+    gap: 3%;
+    height: 100%;
+}
+#projects .proj-container .project{
+    padding: 2px;
+}
+#projects h3{
+    height: 3%;
+}
+}
+@media (max-width:400px) {
+    #projects{
+        height: 170vh;
+    }
+#projects .proj-container{
+    grid-template-columns: 65%;
+    grid-template-rows : 22% 22% 22% 22%;
+    gap: 2%;
+    height: 100%;
+}
+#projects .proj-container .project{
+    padding: 2px;
+}
+#projects h3{
+    height: 3%;
+}
+#projects .proj-container .second{
+    background-image: url(https://images.pexels.com/photos/6283223/pexels-photo-6283223.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+#projects .proj-container .third{
+    background-image: url(./img/Screenshot\ \(80\).png);
+}
 }
 /*end of project section*/
 /*start of contact section*/

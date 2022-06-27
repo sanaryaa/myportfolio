@@ -1,3 +1,4 @@
+
 /*start of slider*/
 let current = 0;
 showCard(current);
