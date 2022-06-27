@@ -329,15 +329,16 @@ body {
 
     #about .me {
         height: 100%;
-        width: 36%;
+       width: 45%;
     }
 
     #about .me .back {
         width: 90%;
     }
 
-   
+
 }
+
 @media (max-width:450px) {
     #about {
         height: 50vh;
@@ -363,6 +364,7 @@ body {
 
     #about .me {
         height: 90%;
+        width: 40%;
     }
 
     #about .me .back {
@@ -443,9 +445,9 @@ body {
 
 /*end of skill section*/
 /*start of project section*/
-#projects{
+#projects {
     width: 100%;
-    height:90vh;
+    height: 90vh;
     padding-left: 7%;
     padding-right: 7%;
     display: flex;
@@ -453,41 +455,46 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-#projects .proj-container{
+
+#projects .proj-container {
     width: 86%;
     height: 70%;
     margin-top: 3%;
     display: grid;
     grid-template-columns: 41% 41%;
-    grid-template-rows : 45% 45%;
+    grid-template-rows: 45% 45%;
     justify-content: center;
     align-content: center;
     gap: 3%;
-    
+
 }
 
-#projects .proj-container .project{
+#projects .proj-container .project {
     width: 100%;
     height: 100%;
     border-radius: 7px;
     background-size: 100%;
     background-repeat: no-repeat;
-    
+
 }
-#projects .proj-container .first{
+
+#projects .proj-container .first {
     background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-#projects .proj-container .second{
+
+#projects .proj-container .second {
     background-image: url(https://images.pexels.com/photos/6929012/pexels-photo-6929012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
-#projects .proj-container .third{
+
+#projects .proj-container .third {
     background-image: url(./img/Screenshot\ \(81\).png);
 }
-#projects .proj-container .fourth{
+
+#projects .proj-container .fourth {
     background-image: url(https://images.pexels.com/photos/4706109/pexels-photo-4706109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
-#projects .proj-container .project .caption .detail{
+#projects .proj-container .project .caption .detail {
     width: 100%;
     height: 100%;
     display: flex;
@@ -498,14 +505,16 @@ body {
     padding-right: 10%;
     text-align: center;
 }
-#projects .proj-container .project .caption .detail h5{
+
+#projects .proj-container .project .caption .detail h5 {
     color: white;
     font-family: 'Andika New Basic', sans-serif;
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
     font-size: 25px;
 }
-#projects .proj-container .project .caption .detail p{
+
+#projects .proj-container .project .caption .detail p {
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Ubuntu', sans-serif;
@@ -513,22 +522,25 @@ body {
     font-size: 15px;
     margin-top: 7%;
 }
-#projects .proj-container .project .caption .detail  button{
+
+#projects .proj-container .project .caption .detail button {
     width: 120px;
     line-height: 1.5rem;
     margin-top: 7%;
     border-radius: 7px;
     border: none;
-    background-color:rgba(255, 255, 255, 0.399);
+    background-color: rgba(255, 255, 255, 0.399);
     filter: blur(80%);
     cursor: pointer;
 }
-#projects .proj-container .project .caption .detail  button:hover{
+
+#projects .proj-container .project .caption .detail button:hover {
     width: 125px;
     line-height: 1.7rem;
-    
+    box-shadow: 1px 1px 5px grey;
 }
-#projects .proj-container .project .caption .detail a{
+
+#projects .proj-container .project .caption .detail a {
     text-decoration: none;
     color: black;
     font-family: 'Anek Tamil', sans-serif;
@@ -536,17 +548,20 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
-#projects .proj-container .project:hover .caption{
+
+#projects .proj-container .project:hover .caption {
     display: block;
 }
-#projects .proj-container .project .caption{
+
+#projects .proj-container .project .caption {
     border-radius: 7px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.485);
     display: none;
 }
-#projects h3{
+
+#projects h3 {
     width: 86%;
     height: 5%;
     font-size: 40px;
@@ -559,136 +574,184 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 @media (max-width:1000px) {
-    #projects{
+    #projects {
         height: 170vh;
     }
-#projects .proj-container{
-    grid-template-columns: 65%;
-    grid-template-rows : 18% 18% 18% 18%;
-    gap: 3%;
-    height: 100%;
-}
-#projects .proj-container .project{
-    padding: 2px;
-}
-#projects h3{
-    height: 3%;
-}
-}
-@media (max-width:400px) {
-    #projects{
-        height: 170vh;
+
+    #projects .proj-container {
+        grid-template-columns: 65%;
+        grid-template-rows: 18% 18% 18% 18%;
+        gap: 3%;
+        height: 100%;
     }
-#projects .proj-container{
-    grid-template-columns: 65%;
-    grid-template-rows : 22% 22% 22% 22%;
-    gap: 2%;
-    height: 100%;
-}
-#projects .proj-container .project{
-    padding: 2px;
-}
-#projects h3{
-    height: 3%;
-}
-#projects .proj-container .second{
-    background-image: url(https://images.pexels.com/photos/6283223/pexels-photo-6283223.jpeg?auto=compress&cs=tinysrgb&w=600);
+
+    #projects .proj-container .project {
+        padding: 2px;
+    }
+
+    #projects h3 {
+        height: 3%;
+    }
+    #projects .proj-container .project .caption .detail {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    #projects .proj-container .project .caption .detail h5 {
+        font-size: 20px;
+    }
+    
+    #projects .proj-container .project .caption .detail p {
+        font-size: 12px;
+        margin-top: 4%;
+    }
+    
+    #projects .proj-container .project .caption .detail button {
+        line-height: 1.3rem;
+        margin-top: 5%;
+    }
+    
+    #projects .proj-container .project .caption .detail button:hover {
+        width: 125px;
+        line-height: 1.5rem;
+    
+    }
 }
 
-#projects .proj-container .third{
-    background-image: url(./img/Screenshot\ \(80\).png);
+@media (max-width:400px) {
+    #projects {
+        height: 170vh;
+    }
+
+    #projects .proj-container {
+        grid-template-columns: 65%;
+        grid-template-rows: 22% 22% 22% 22%;
+        gap: 2%;
+        height: 100%;
+    }
+
+    #projects .proj-container .project {
+        padding: 2px;
+    }
+
+    #projects h3 {
+        height: 3%;
+    }
+
+    #projects .proj-container .second {
+        background-image: url(https://images.pexels.com/photos/6283223/pexels-photo-6283223.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
+
+    #projects .proj-container .third {
+        background-image: url(./img/Screenshot\ \(80\).png);
+    }
 }
-}
+
 /*end of project section*/
 /*start of contact section*/
 #contact {
     width: 100%;
-    height: 95vh;
+    height: 70vh;
     display: flex;
-    align-items: center;
-    justify-content: end;
-    background-image: url(https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    align-items: flex-start;
+    justify-content: center;
     background-size: 50%;
     background-position: 5% 50%;
     background-repeat: no-repeat;
     position: relative;
+    border: 1px solid black;
+    flex-direction: column;
+    background-image: url(https://www.troax.com/sites/default/files/styles/header_image_desktop_/public/2019-08/Contact_header_2880x1000px.jpg?itok=9hgrfHuH);
+    background-repeat:no-repeat;
+    background-size:100%;
 }
 #contact .cont-container{
-    width: 50%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
+    height: 87%;
+    width: 40%;
+    background-color:rgba(0, 0, 0, 0.278);
+    margin-left: 2%;
     border-radius: 7px;
-    margin-right: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-} 
-#contact .cont-container #cont-form{
-    width: 100%;
-    height: 75%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    text-align:left;
+    flex-direction: column;
 }
-#contact .cont-container #cont-form label{
+#contact .cont-container form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 55%;
+    height: 70%;
+    flex-direction: column;
+}
+#contact .cont-container button{
+    width: 20%;
+    line-height: 2rem;
+    background-color: #fff;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+#contact .cont-container button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+}
+#contact .cont-container form label{
     color: white;
     font-size: 20px;
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 2rem;
-    margin-top: 2%;
-    
 }
-#contact .cont-container #cont-form textarea{
-    width: 60%;
-    border-radius: 7px;
-    margin-top:2% ;
-    
-}
-#contact .cont-container #cont-form input{
-    width: 60%;
-    line-height: 1.5rem;
-    border-radius: 7px;
-    border:none;
-    border-bottom: 0.1px solid rgba(255, 255, 255, 0.338);
-    background-color: black;
-    padding: 1%;
-    margin-top: 2%;
-    color: white;
-}
-#contact .cont-container #cont-form button{
-    width:30% ;
-    line-height: 2rem;
+#contact .cont-container form input{
+    width: 100%;
+    padding:1%;
     border: none;
-    background-color: #fff;
-    border-radius: 7px;
-    margin-top: 5%;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: white;
+    margin-top: 2%;
 }
-#contact .cont-container .title{
-    width: 50%;
-    height: 20%;
-    border-radius: 15px;
+#contact .cont-container form textarea{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 2%;
+}
+#contact .cont-way{
+    width: 20%;
+    height: 18%;
+    border: 1px solid black;
     position: absolute;
-    top: 0;
-    bottom: 35%;
-    background-color: rgb(44, 60, 37);
+    z-index: 1;
+    left: 12%;
+    bottom: 80%;
+    border-radius: 7px;
+    background-color: black;
+}
+#contact .cont-way h3{
+    width: 100%;
+    height:100%;
+    font-size: 30px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    line-height: 1.5rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
-#contact .cont-container .title h3{
-    font-size: 40px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    line-height: 3rem;
-}
+
+
 /*end of contact section*/
 footer {
     width: 100%;
