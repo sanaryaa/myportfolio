@@ -446,102 +446,79 @@ body {
 
 /*end of skill section*/
 /*start of project section*/
-#projects {
+#projects{
     width: 100%;
-    height: 150vh;
-    padding-left: 7%;
-    padding-right: 7%;
+    height: 140vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
-#projects .proj-container {
-    width: 86%;
-    height: 100%;
-    margin-top: 3%;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    justify-content: center;
-    align-content: center;
-    gap: 2%;
-
-}
-
-#projects .proj-container .project {
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-}
-
-#projects .proj-container .first {
-    background-image: url(https://img.freepik.com/free-vector/opened-coffee-shop-with-one-individual-table_23-2148548903.jpg?w=360);
-}
-
-#projects .proj-container .second {
-    background-image: url(https://media.istockphoto.com/vectors/calculator-isolated-on-a-colored-background-vector-id544462430?k=20&m=544462430&s=612x612&w=0&h=iTSj0mGztBISBiU18BxAuFufsQfEDAVp6P9zMbOXM44=);
-}
-
-#projects .proj-container .third {
-    background-image: url(https://postcron.com/image-splitter/img/landing/crop_imagesplitter.png);
-}
-
-#projects .proj-container .fourth {
-    background-image: url(https://images.pexels.com/photos/4706109/pexels-photo-4706109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-}
-
-#projects .proj-container .project .caption .detail {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-}
-
-#projects .proj-container .project .caption .detail h5 {
-    color: white;
+#projects h3{
+    font-size: 40px;
     font-family: 'Andika New Basic', sans-serif;
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 30px;
-}
+    line-height: 5rem;
 
-#projects .proj-container .project .caption .detail p {
+}
+#projects .cards{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+    position: relative;
+    border: 1px solid black;
+}
+#projects .cards .card{
+    width: 35%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 1px solid rgba(187, 149, 96, 0.308);
+    border-radius: 10px;
+}
+#projects .cards .card:hover{
+   box-shadow: 1px 6px 5px rgba(108, 82, 46, 0.308) ;
+}
+#projects .cards .card .detail{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+}
+#projects .cards .card .detail h5{
+    font-size: 25px;
     font-family: 'Andika New Basic', sans-serif;
     font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-size: 20px;
-    margin-top: 7%;
-}
-
-#projects .proj-container .project .caption .detail button {
-    width: 130px;
+    font-family: 'Big Shoulders Display', cursive;
     line-height: 2rem;
-    margin-top: 10%;
-    border-radius: 7px;
+}
+#projects .cards .card .detail p{
+    font-size: 15px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 5%;
+    color: rgb(107, 107, 107);
+}
+#projects .cards .card .detail button{
+    width: 40%;
+    height: 1.5rem;
+    margin-top:5% ;
     border: none;
-    background-color: rgba(255, 255, 255, 0.399);
-    filter: blur(80%);
-    cursor: pointer;
+    background-color: rgba(125, 115, 76, 0.638);
+    border-radius: 7px;
 }
-
-#projects .proj-container .project .caption .detail button:hover {
-    width: 135px;
-    line-height: 2.3rem;
-    box-shadow: 1px 1px 5px grey;
-}
-
-#projects .proj-container .project .caption .detail a {
+#projects .cards .card .detail button a{
     text-decoration: none;
     color: black;
     font-family: 'Anek Tamil', sans-serif;
@@ -549,107 +526,50 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
-
-#projects .proj-container .project:hover .caption {
-    width: 100%;
+#projects .cards .card .detail button:hover{
+    width: 43%;
+    height: 1.7rem;
+    box-shadow: 1px 1px 3px black;
+}
+#projects .cards .card .img{
+    width: 50%;
     height: 100%;
-    display: block;
 }
-
-#projects .proj-container .project .caption {
-    border-radius: 7px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.485);
-    display: none;
+#projects .cards .first{
+    position: absolute;
+    left: 55%;
+    bottom: 65%;
 }
-
-#projects h3 {
-    width: 86%;
-    height: 4%;
-    font-size: 40px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    line-height: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-
+#projects .cards .second{
+    position: absolute;
+    right: 55%;
+    bottom: 45%;
 }
-
-@media (max-width:1000px) {
-    #projects {
-        height: 250vh;
-    }
-
-    #projects .proj-container {
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 3%;
-    }
-
-    #projects .proj-container .project {
-        padding: 2px;
-    }
-
-    #projects h3 {
-        height: 3%;
-    }
-    #projects .proj-container .project .caption .detail {
-        padding-left: 7%;
-        padding-right: 7%;
-    }
-    #projects .proj-container .project .caption .detail h5 {
-        font-size: 27px;
-    }
-    
-    #projects .proj-container .project .caption .detail p {
-        font-size: 17px;
-        margin-top: 4%;
-    }
-    
-    #projects .proj-container .project .caption .detail button {
-        line-height: 1.7rem;
-        margin-top: 5%;
-    }
-    
-    #projects .proj-container .project .caption .detail button:hover {
-        width: 125px;
-        line-height: 2rem;
-    
-    }
+#projects .cards .third{
+    position: absolute;
+    left: 55%;
+    top: 45%;
 }
-
-@media (max-width:400px) {
-    #projects {
-        height: 170vh;
-    }
-
-    #projects .proj-container {
-        /* grid-template-columns: 60%;
-        grid-template-rows: 22% 22% 22% 22%; */
-        gap: 2%;
-        height: 100%;
-    }
-
-    #projects .proj-container .project {
-        padding: 2px;
-    }
-
-    #projects h3 {
-        height: 3%;
-    }
-
-    #projects .proj-container .second {
-        background-image: url(https://images.pexels.com/photos/6283223/pexels-photo-6283223.jpeg?auto=compress&cs=tinysrgb&w=600);
-    }
-
-    #projects .proj-container .third {
-        background-image: url(./img/Screenshot\ \(80\).png);
-    }
+#projects .cards .first .img{
+    background-image: url(https://play-lh.googleusercontent.com/3a4fMVvrYf2NqzdGxWuol6E1aIYawa4iWbUAw9toeriWMDIi8RB2rheC5w6jZiIhhq_7);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+#projects .cards .second .img{
+   background-image: url(https://i.pinimg.com/originals/50/69/42/5069422b3483ffbb29a9161c831e32ee.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+#projects .cards .third .img{
+    background-image: url(https://www.pngitem.com/pimgs/m/137-1377268_whack-a-mole-mole-hd-png-download.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
 
 /*end of project section*/
@@ -689,7 +609,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 25%;
     height: 100%;
     background-image: url(https://i.pinimg.com/originals/2f/96/c0/2f96c0759b37e1ea997bf28c6cdefe6b.gif);
     background-size:100%;
@@ -771,7 +691,12 @@ font-size: 22px;
     line-height: 1.5rem;
     color: white;
 }
-@media (max-width:650px) {
+@media (max-width:1000px) {
+    #contact .left .content-title h3{
+        font-size: 25px;
+    }
+}
+@media (max-width:700px) {
     #contact{
         height: 150vh;
         flex-direction: column;
@@ -784,7 +709,6 @@ font-size: 22px;
         height: 25%;
         width: 100%;
     }
-
     
 }
 
