@@ -616,8 +616,8 @@ body {
         position: static;
     }
     #projects .cards .card{
-        width: 90%;
-        height: 25%;
+        width: 80%;
+        height: 30%;
         position: static;
     }
 }
