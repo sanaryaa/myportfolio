@@ -255,7 +255,7 @@ body {
 }
 
 #about .description a button {
-    width: 120%;
+    width: 150%;
     background-color: white;
     line-height: 2.5rem;
     border: 0.5px solid #d8b37b;
@@ -322,7 +322,7 @@ body {
     }
 
     #about .description a button {
-        width: 110%;
+        width: 130%;
         line-height: 2rem;
         font-size: 13px;
         margin-top: 15%;
@@ -462,8 +462,8 @@ body {
     height: 100%;
     margin-top: 3%;
     display: grid;
-    grid-template-columns: 41% 41%;
-    grid-template-rows: 45% 45%;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
     justify-content: center;
     align-content: center;
     gap: 2%;
@@ -586,8 +586,8 @@ body {
 
     #projects .proj-container {
         height: 100%;
-        grid-template-columns: 50%;
-        grid-template-rows: 20% 20% 20% 20%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 3%;
     }
 
@@ -629,8 +629,8 @@ body {
     }
 
     #projects .proj-container {
-        grid-template-columns: 60%;
-        grid-template-rows: 22% 22% 22% 22%;
+        /* grid-template-columns: 60%;
+        grid-template-rows: 22% 22% 22% 22%; */
         gap: 2%;
         height: 100%;
     }
@@ -770,6 +770,22 @@ font-size: 22px;
     font-family: 'Big Shoulders Display', cursive;
     line-height: 1.5rem;
     color: white;
+}
+@media (max-width:650px) {
+    #contact{
+        height: 150vh;
+        flex-direction: column;
+    }
+    #contact .left {
+        height: 75%;
+        width: 100%;
+    }
+    #contact .right{
+        height: 25%;
+        width: 100%;
+    }
+
+    
 }
 
 /*end of contact section*/
