@@ -551,26 +551,26 @@ body {
     top: 45%;
 }
 #projects .cards .first .img{
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/516L8wrZHXL.png);
+    background-image: url(https://picresize.com/img/picresize_file_convert.webp);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: #353535;
+    background-color: #ffffff;
 }
 #projects .cards .second .img{
-   background-image: url(https://www.pngitem.com/pimgs/m/135-1354413_transparent-drums-clipart-drum-kit-cartoon-png-png.png);
+   background-image: url(https://media.istockphoto.com/vectors/drums-rock-music-cartoon-vector-illustration-vector-id862672154?k=20&m=862672154&s=612x612&w=0&h=UUtCA_tZI7CpyHZ7sbmbrU4z63Dqwe8WThBiWip0xcE=);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
 }
 #projects .cards .third .img{
-    background-image: url(https://runestone.academy/ns/books/published/thinkcspy/_images/mole.png);
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1754/1754106.png);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: #fff;
-    background-color: #98c75e;
+    background-color: #ffffff;
 }
 @media (max-width:900px) {
     #projects{
@@ -578,7 +578,7 @@ body {
         
     }
     #pojects h3{
-        font-size: 30;
+        font-size: 30px;
     }
     #projects .cards{
         height: 80%;
@@ -617,9 +617,6 @@ body {
     #projects{
         height: 100vh;
     }
-    #projects h3{
-        font-size: 25;
-    }
     #projects .cards{
         height: 100%;
         flex-direction: column;
@@ -629,7 +626,7 @@ body {
         width: 80%;
         height: 25%;
         position: static;
-        gap: 3%;
+        gap: 5%;
     }
     #projects .cards .card .detail h5{
         font-size: 19px;
@@ -767,7 +764,10 @@ font-size: 22px;
         height: 25%;
         width: 100%;
     }
-    
+    #contact .left .content-title{
+        width: 40%;
+        height: 15%;
+    }
 }
 
 /*end of contact section*/
@@ -780,7 +780,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding-top: 1%;
-    margin-top: 5%;
 }
 
 footer div {
