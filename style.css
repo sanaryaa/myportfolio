@@ -330,7 +330,7 @@ body {
 
     #about .me {
         height: 100%;
-       width: 45%;
+       width: 50%;
     }
 
     #about .me .back {
@@ -365,7 +365,7 @@ body {
 
     #about .me {
         height: 90%;
-        width: 40%;
+        width: 50%;
     }
 
     #about .me .back {
@@ -554,14 +554,14 @@ body {
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #353535;
 }
 #projects .cards .second .img{
    background-image: url(https://www.pngitem.com/pimgs/m/135-1354413_transparent-drums-clipart-drum-kit-cartoon-png-png.png);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: #fff;
+    background-color: #f7f7f7;
 }
 #projects .cards .third .img{
     background-image: url(https://runestone.academy/ns/books/published/thinkcspy/_images/mole.png);
@@ -569,6 +569,7 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: #fff;
+    background-color: #98c75e;
 }
 @media (max-width:900px) {
     #projects{
@@ -582,6 +583,41 @@ body {
     #projects .cards .card{
         width: 80%;
         height: 45%;
+        position: static;
+    }
+    #projects .cards .card .detail button{
+        width: 45%;
+        height: 2rem;
+        margin-top:5% ;
+        border: none;
+        background-color: rgba(125, 115, 76, 0.638);
+        border-radius: 7px;
+    }
+    #projects .cards .card .detail button a{
+        line-height: 1.7rem;
+    }
+    #projects .cards .card .detail button a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Anek Tamil', sans-serif;
+        font-family: 'Big Shoulders Display', cursive;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+    }
+    
+}
+@media (max-width:400px) {
+    #projects{
+        height: 110vh;
+    }
+    #projects .cards{
+        height: 100%;
+        flex-direction: column;
+        position: static;
+    }
+    #projects .cards .card{
+        width: 90%;
+        height: 25%;
         position: static;
     }
 }
@@ -607,18 +643,6 @@ body {
     flex-direction: column;
 }
 #contact .right {
-    /* background-image: radial-gradient(circle at 50% 50% ,rgb(176, 150, 101) 4%,transparent 4%),
-    radial-gradient(circle at 53% 50% ,orange 5%,transparent 2%),
-    radial-gradient(circle at 46% 50% ,rgb(121, 98, 54) 6%,transparent 4%),
-    radial-gradient(circle at 55% 55% ,rgb(246, 205, 130) 8%,transparent 4%),
-    radial-gradient(circle at 50% 47% ,rgb(119, 78, 0) 9%,transparent 4%); */
-    /* background-image: radial-gradient(circle at 50% 50% ,rgb(255, 198, 91) 7% ,transparent 25%),
-    radial-gradient(circle at 40% 55% ,rgb(126, 109, 78) 10%,transparent 25%),
-    radial-gradient(circle at 50% 45% ,rgba(174, 140, 77, 0.444) 12%,transparent 20%),
-    radial-gradient(circle at 60% 45% ,rgb(240, 240, 81) 10%,transparent 25%),
-    radial-gradient(circle at 50% 30% ,rgb(197, 237, 77) 10%,transparent 25%)
-    ;
-    -webkit-filter: blur(8px); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -629,7 +653,7 @@ body {
 }
 
 #contact .left .content{
-    width: 85%;
+    width: 90%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -639,7 +663,7 @@ body {
 
 }
 #contact .left .content form{
-    width: 55%;
+    width: 70%;
     height: 100%;
     background-color: transparent;
     display: flex;
@@ -703,11 +727,6 @@ font-size: 22px;
     color: white;
 }
 @media (max-width:1000px) {
-    #contact .left .content-title h3{
-        font-size: 25px;
-    }
-}
-@media (max-width:700px) {
     #contact{
         height: 150vh;
         flex-direction: column;
