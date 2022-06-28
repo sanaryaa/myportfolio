@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>My portfolio |</title>
 </head>
+
 <body>
     <!--start of navigation bar:-->
     <section class="sec1">
@@ -36,7 +38,7 @@
         <div class="description">
             <h3>About Me</h3>
             <p>I am Sanarya, Frontend developer and UI UX designer with a background in software engineering</p>
-            <a href=""><button>Download my CV</button></a>
+            <a href="#contact"><button>Let's Chat</button></a>
         </div>
         <div class="me">
             <div class="back">
@@ -50,7 +52,7 @@
     <section id="skills">
         <h3>My Skills</h3>
         <div class="boxs">
-            <button onclick="prevCard()"><img src="https://img.icons8.com/ios/40/000000/back--v1.png" /></button>
+            <button onclick="prevCard()" id="prev-btn"><img src="https://img.icons8.com/ios/40/000000/back--v1.png" /></button>
             <div class="box">
                 <img src="https://img.icons8.com/ios/100/000000/html-5--v2.png" />
                 <h4>HTML</h4>
@@ -86,7 +88,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum in eum, delectus tempore
                     consequuntur.</p>
             </div>
-            <button onclick="nextCard()"><img src="https://img.icons8.com/ios/50/000000/more-than.png" /></button>
+            <button onclick="nextCard()" id="nex-btn"><img src="https://img.icons8.com/ios/50/000000/more-than.png" /></button>
         </div>
         <!--end of skill section-->
     </section>
@@ -135,18 +137,26 @@
     <!--end of project section-->
     <!--start of contact section-->
     <section id="contact">
-        <div class="cont-container">
-            <form action="">
-                <label for="email">Email: </label>
-            <input type="email" id="email" >
-            <label for="msg">massege: </label>
-            <textarea  id="msg" cols="38" rows="2" ></textarea>
-            </form>
-            <button>Send</button>
+        <div class="left">
+            <div class="content">
+                <form action="">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                    <label for="msg">your message</label>
+                    <textarea name="" id="" cols="28" rows="3"></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
+            <div class="content-title">
+                <h3>Contact Me</h3>
+            </div>
         </div>
-        <div class="cont-way"> 
-            <h3>Contact Me</h3>
+        <div class="right">
+        
         </div>
+
     </section>
     <footer>
         <div class="my-social">

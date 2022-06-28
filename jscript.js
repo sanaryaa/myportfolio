@@ -22,9 +22,11 @@ function showCard(m) {
     let cards = document.getElementsByClassName("box");
     if (m < 0) {
         m = 0;
+        
     }
     if (m > cards.length - 1) {
         m = cards.length - 1;
+       
     }
     for (let i = 0; i < cards.length; i++) {
         cards[i].style.display = "none";
