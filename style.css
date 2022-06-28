@@ -586,7 +586,7 @@ body {
         position: static;
     }
     #projects .cards .card .detail button{
-        width: 45%;
+        width: 50%;
         height: 2rem;
         margin-top:5% ;
         border: none;
@@ -597,12 +597,16 @@ body {
         line-height: 1.7rem;
     }
     #projects .cards .card .detail button a{
-        text-decoration: none;
-        color: black;
-        font-family: 'Anek Tamil', sans-serif;
-        font-family: 'Big Shoulders Display', cursive;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 15px;
+        font-size: 13px;
+    }
+    #projects .cards .card .detail h5{
+        font-size: 20px;
+        line-height: 1.7rem;
+    }
+    #projects .cards .card .detail p{
+        font-size: 13px;
+        margin-top: 5%;
+    
     }
     
 }
