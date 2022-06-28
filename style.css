@@ -573,7 +573,7 @@ body {
 }
 @media (max-width:900px) {
     #projects{
-        height: 170vh;
+        height: 140vh;
     }
     #projects .cards{
         height: 80%;
@@ -582,7 +582,7 @@ body {
     }
     #projects .cards .card{
         width: 80%;
-        height: 45%;
+        height: 40%;
         position: static;
     }
     #projects .cards .card .detail button{
@@ -595,24 +595,22 @@ body {
     }
     #projects .cards .card .detail button a{
         line-height: 1.7rem;
-    }
-    #projects .cards .card .detail button a{
-        font-size: 13px;
+        font-size: 18px;
     }
     #projects .cards .card .detail h5{
-        font-size: 20px;
+        font-size: 30px;
         line-height: 1.7rem;
     }
     #projects .cards .card .detail p{
-        font-size: 13px;
+        font-size: 18px;
         margin-top: 5%;
     
     }
     
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
     #projects{
-        height: 110vh;
+        height: 90vh;
     }
     #projects .cards{
         height: 100%;
@@ -621,8 +619,26 @@ body {
     }
     #projects .cards .card{
         width: 80%;
-        height: 30%;
+        height: 25%;
         position: static;
+        gap: 3%;
+    }
+    #projects .cards .card .detail h5{
+        font-size: 19px;
+        line-height: 1.7rem;
+    }
+    #projects .cards .card .detail p{
+        font-size: 10px;
+        margin-top: 5%;
+    
+    }
+    #projects .cards .card .detail button{
+        width: 50%;
+        height: 1.7rem;
+    }
+    #projects .cards .card .detail button a{
+        line-height: 1.7rem;
+        font-size: 11px;
     }
 }
 
