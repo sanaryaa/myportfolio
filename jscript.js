@@ -34,13 +34,3 @@ function showCard(m) {
     cards[m].style.display = "block";
 }
 /*end of slider*/
-/*how user contact me via email*/
-// function sendEmail(){
-//     Email.send({
-//         To : 'sanaryahamakarim1@gmail.com',
-//         From : document.getElementById("email"),
-//         }).then(()=>{
-//             alert("mail sent successfully");
-//         }
-//         );
-// }
