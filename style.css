@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&family=Fascinate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Anek+Tamil:wght@200&family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Anek+Tamil:wght@200&family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Anek+Tamil:wght@200&family=Quicksand:wght@500&display=swap");
+
 * {
     padding: 0;
     margin: 0;
@@ -10,21 +11,26 @@
 
 body {
     width: 100%;
-    height: 150vh;
+    height: 520vh;
+    position: relative;
+}
+
+.bottom-nav {
+    display: none;
 }
 
 /* start of navigation*/
 .sec1 {
-    width: 90%;
-    height: 10vh;
+    width: 100%;
+    height: 6vh;
     display: flex;
     align-items: center;
     position: sticky;
     background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
     top: -1px;
     z-index: 2;
-    margin-left: 5%;
-    margin-right: 5%;
     border-bottom: 1px solid rgba(227, 192, 127, 0.701);
 }
 
@@ -33,15 +39,14 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 1.5%;
 }
 
 .sec1 .logo a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Fascinate', cursive;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Fascinate", cursive;
     font-size: 23px;
 }
 
@@ -70,9 +75,9 @@ body {
 .sec1 nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
     font-size: 19px;
 }
 
@@ -82,11 +87,60 @@ body {
     transition-timing-function: ease-out;
 }
 
-@media (max-width:650px) {
+@media (max-width: 700px) {
+    .bottom-nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 6%;
+        display: block;
+        background-color: #fff;
+        position: fixed;
+        z-index: 2;
+        border-top: 1px solid rgba(227, 192, 127, 0.701);
+    }
+
+    .bottom-nav nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    .bottom-nav nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bottom-nav nav ul li {
+        width: 25%;
+        text-align: center;
+        list-style: none;
+    }
+
+    .bottom-nav nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: "Anek Tamil", sans-serif;
+        font-family: "Big Shoulders Display", cursive;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 19px;
+    }
+
+    .bottom-nav nav ul li a:hover {
+        font-size: 21px;
+        transition: 0.5s;
+        transition-timing-function: ease-out;
+    }
+
     .sec1 {
         height: 8vh;
-        margin-left: 3%;
-        margin-right: 3%;
     }
 
     .sec1 .logo {
@@ -101,7 +155,6 @@ body {
     .sec1 nav {
         display: none;
     }
-
 }
 
 /*end of navigation*/
@@ -137,7 +190,7 @@ body {
     left: 48%;
     position: absolute;
     z-index: 1;
-    background-image: linear-gradient(to right, #D9A962 13%, transparent 13%);
+    background-image: linear-gradient(to right, #d9a962 13%, transparent 13%);
     background-origin: 10%;
     border-radius: 7px;
     display: flex;
@@ -149,20 +202,20 @@ body {
 .sec2 .front p {
     color: rgb(70, 70, 70);
     font-size: 15px;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .sec2 .front h1 {
     font-size: 50px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
     line-height: 5rem;
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
     .sec2 {
         height: 70vh;
         padding-left: 2%;
@@ -189,7 +242,7 @@ body {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
     .sec2 {
         height: 40vh;
         padding-left: 1%;
@@ -211,7 +264,6 @@ body {
         font-size: 20px;
         line-height: 2.5rem;
     }
-
 }
 
 /*about me*/
@@ -234,23 +286,23 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center
+    text-align: center;
 }
 
 #about .description h3 {
     font-size: 45px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
     line-height: 5rem;
 }
 
 #about .description p {
     color: rgb(70, 70, 70);
     font-size: 20px;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
     margin-top: 5%;
 }
 
@@ -262,13 +314,12 @@ body {
     border-radius: 7px;
     text-decoration: none;
     color: #5a482c;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
     font-size: 15px;
     margin-top: 15%;
     cursor: pointer;
-
 }
 
 #about .description a button:hover {
@@ -290,7 +341,7 @@ body {
 #about .me .back {
     width: 60%;
     height: 75%;
-    border: 5px solid #B38B50;
+    border: 5px solid #b38b50;
     position: relative;
     border-radius: 5px;
 }
@@ -305,7 +356,7 @@ body {
     border-radius: 5px;
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
     #about {
         height: 70vh;
         padding-left: 3%;
@@ -329,18 +380,16 @@ body {
     }
 
     #about .me {
-        height: 100%;
-       width: 50%;
+        height: 97%;
+        width: 45%;
     }
 
     #about .me .back {
         width: 90%;
     }
-
-
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
     #about {
         height: 50vh;
         padding-left: 2%;
@@ -388,9 +437,9 @@ body {
 
 #skills h3 {
     font-size: 40px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
     line-height: 5rem;
 }
 
@@ -416,9 +465,9 @@ body {
 
 #skills .boxs .box h4 {
     font-size: 30px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
     line-height: 3.5rem;
     color: #30220c;
 }
@@ -428,9 +477,9 @@ body {
     margin: auto;
     color: rgb(70, 70, 70);
     font-size: 15px;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
 }
 
 #skills .boxs button {
@@ -438,7 +487,7 @@ body {
     background-color: transparent;
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
     #skills .boxs .box {
         width: 45%;
     }
@@ -446,7 +495,7 @@ body {
 
 /*end of skill section*/
 /*start of project section*/
-#projects{
+#projects {
     width: 100%;
     height: 110vh;
     display: flex;
@@ -454,15 +503,16 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-#projects h3{
-    font-size: 40px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    line-height: 5rem;
 
+#projects h3 {
+    font-size: 40px;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    line-height: 5rem;
 }
-#projects .cards{
+
+#projects .cards {
     width: 100%;
     height: 90%;
     display: flex;
@@ -472,99 +522,113 @@ body {
     gap: 2%;
     position: relative;
 }
-#projects .cards .card{
+
+#projects .cards .card {
     width: 40%;
     height: 30%;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     border: 1px solid rgba(187, 149, 96, 0.308);
     border-radius: 10px;
+}
 
+#projects .cards .card:hover {
+    box-shadow: 1px 6px 5px rgba(108, 82, 46, 0.308);
 }
-#projects .cards .card:hover{
-   box-shadow: 1px 6px 5px rgba(108, 82, 46, 0.308) ;
-}
-#projects .cards .card .detail{
+
+#projects .cards .card .detail {
     width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 2%;
 }
-#projects .cards .card .detail h5{
+
+#projects .cards .card .detail h5 {
     font-size: 25px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
     line-height: 2rem;
 }
-#projects .cards .card .detail p{
+
+#projects .cards .card .detail p {
     font-size: 15px;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
     margin-top: 5%;
     color: rgb(107, 107, 107);
 }
-#projects .cards .card .detail button{
+
+#projects .cards .card .detail button {
     width: 40%;
     height: 1.5rem;
-    margin-top:5% ;
+    margin-top: 5%;
     border: none;
     background-color: rgba(125, 115, 76, 0.638);
     border-radius: 7px;
 }
-#projects .cards .card .detail button a{
+
+#projects .cards .card .detail button a {
     text-decoration: none;
     color: black;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
     font-size: 15px;
 }
-#projects .cards .card .detail button:hover{
+
+#projects .cards .card .detail button:hover {
     width: 43%;
     height: 1.7rem;
     box-shadow: 1px 1px 3px black;
 }
-#projects .cards .card .img{
+
+#projects .cards .card .img {
     width: 50%;
     height: 100%;
 }
-#projects .cards .first{
+
+#projects .cards .first {
     position: absolute;
     left: 55%;
     bottom: 65%;
 }
-#projects .cards .second{
+
+#projects .cards .second {
     position: absolute;
     right: 55%;
     bottom: 45%;
 }
-#projects .cards .third{
+
+#projects .cards .third {
     position: absolute;
     left: 55%;
     top: 45%;
 }
-#projects .cards .first .img{
+
+#projects .cards .first .img {
     background-image: url(https://picresize.com/img/picresize_file_convert.webp);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: #ffffff;
 }
-#projects .cards .second .img{
-   background-image: url(https://media.istockphoto.com/vectors/drums-rock-music-cartoon-vector-illustration-vector-id862672154?k=20&m=862672154&s=612x612&w=0&h=UUtCA_tZI7CpyHZ7sbmbrU4z63Dqwe8WThBiWip0xcE=);
+
+#projects .cards .second .img {
+    background-image: url(https://media.istockphoto.com/vectors/drums-rock-music-cartoon-vector-illustration-vector-id862672154?k=20&m=862672154&s=612x612&w=0&h=UUtCA_tZI7CpyHZ7sbmbrU4z63Dqwe8WThBiWip0xcE=);
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: #f7f7f7;
 }
-#projects .cards .third .img{
+
+#projects .cards .third .img {
     background-image: url(https://cdn-icons-png.flaticon.com/512/1754/1754106.png);
     background-size: contain;
     background-position: 50% 50%;
@@ -572,76 +636,87 @@ body {
     background-color: #fff;
     background-color: #ffffff;
 }
-@media (max-width:900px) {
-    #projects{
+
+@media (max-width: 900px) {
+    #projects {
         height: 120vh;
-        
     }
-    #pojects h3{
+
+    #pojects h3 {
         font-size: 30px;
     }
-    #projects .cards{
+
+    #projects .cards {
         height: 80%;
         flex-direction: column;
         position: static;
     }
-    #projects .cards .card{
+
+    #projects .cards .card {
         width: 80%;
         height: 40%;
         position: static;
     }
-    #projects .cards .card .detail button{
+
+    #projects .cards .card .detail button {
         width: 50%;
         height: 2rem;
-        margin-top:5% ;
+        margin-top: 5%;
         border: none;
         background-color: rgba(125, 115, 76, 0.638);
         border-radius: 7px;
     }
-    #projects .cards .card .detail button a{
+
+    #projects .cards .card .detail button a {
         line-height: 1.7rem;
         font-size: 18px;
     }
-    #projects .cards .card .detail h5{
+
+    #projects .cards .card .detail h5 {
         font-size: 30px;
         line-height: 1.7rem;
     }
-    #projects .cards .card .detail p{
+
+    #projects .cards .card .detail p {
         font-size: 18px;
         margin-top: 5%;
-    
     }
-    
 }
-@media (max-width:500px) {
-    #projects{
+
+@media (max-width: 500px) {
+    #projects {
         height: 100vh;
     }
-    #projects .cards{
+
+    #projects .cards {
         height: 100%;
         flex-direction: column;
         position: static;
     }
-    #projects .cards .card{
+
+    #projects .cards .card {
         width: 80%;
         height: 25%;
         position: static;
         gap: 5%;
     }
-    #projects .cards .card .detail h5{
+
+    #projects .cards .card .detail h5 {
         font-size: 19px;
         line-height: 1.7rem;
     }
-    #projects .cards .card .detail p{
+
+    #projects .cards .card .detail p {
         font-size: 10px;
         margin-top: 5%;
-    
     }
-    #projects .cards .card .detail button{
+
+    #projects .cards .card .detail button {
         width: 50%;
         height: 1.7rem;
     }
-    #projects .cards .card .detail button a{
+
+    #projects .cards .card .detail button a {
         line-height: 1.7rem;
         font-size: 11px;
     }
@@ -658,7 +733,8 @@ body {
     background-color: black;
     margin-top: 5%;
 }
-#contact .left{
+
+#contact .left {
     width: 50%;
     height: 100%;
     display: flex;
@@ -667,6 +743,7 @@ body {
     position: relative;
     flex-direction: column;
 }
+
 #contact .right {
     display: flex;
     align-items: center;
@@ -674,10 +751,9 @@ body {
     flex-direction: column;
     width: 25%;
     height: 100%;
-   
 }
 
-#contact .left .content{
+#contact .left .content {
     width: 90%;
     height: 80%;
     display: flex;
@@ -685,9 +761,9 @@ body {
     justify-content: center;
     background: #96897358;
     border-radius: 7px;
-
 }
-#contact .left .content form{
+
+#contact .left .content form {
     width: 70%;
     height: 100%;
     background-color: transparent;
@@ -696,32 +772,37 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-#contact .left .content form label{
-    font-family: 'Andika New Basic', sans-serif;
-font-family: 'Anek Tamil', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-size: 18px;
-margin-bottom: 3%;
-margin-top: 3%;
-color: white;
+
+#contact .left .content form label {
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: white;
 }
-#contact .left .content form button{
+
+#contact .left .content form button {
     width: 35%;
     height: 7%;
     border: none;
     background-color: #fff;
     border-radius: 7px;
     margin-top: 5%;
-    font-family: 'Andika New Basic', sans-serif;
-font-family: 'Anek Tamil', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-size: 22px;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
 }
-#contact .left .content form button:hover{
+
+#contact .left .content form button:hover {
     background-color: black;
     color: white;
 }
-#contact .left .content form input , #contact .left .content form textarea{
+
+#contact .left .content form input,
+#contact .left .content form textarea {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -732,48 +813,52 @@ font-size: 22px;
     color: white;
 }
 
-#contact .left .content-title{
+#contact .left .content-title {
     width: 40%;
     height: 18%;
     position: absolute;
     bottom: 80%;
-    background-color: rgb(163, 111, 53);
+    background-color: rgba(227, 192, 127);
     border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#contact .left .content-title h3{
+
+#contact .left .content-title h3 {
     font-size: 30px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Andika New Basic", sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
     line-height: 1.5rem;
     color: white;
 }
-@media (max-width:1000px) {
-    #contact{
-        height: 150vh;
+
+@media (max-width: 1000px) {
+    #contact {
+        height: 120vh;
         flex-direction: column;
     }
+
     #contact .left {
-        height: 75%;
+        height: 95%;
         width: 100%;
     }
-    #contact .right{
-        height: 25%;
-        width: 100%;
-    }
-    #contact .left .content-title{
+
+    #contact .left .content-title {
         width: 40%;
         height: 15%;
+    }
+
+    #contact .right {
+        display: none;
     }
 }
 
 /*end of contact section*/
 footer {
     width: 100%;
-    height: 15%;
+    height: 3%;
     background-color: rgb(161, 155, 107);
     display: flex;
     align-items: center;
@@ -783,18 +868,17 @@ footer {
 }
 
 footer div {
-    width: 100%;
+    width: 25%;
     height: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.269);
 }
 
 footer div img {
     margin: 2px;
 }
-
-
 
 footer h6 {
     width: 100%;
@@ -805,9 +889,9 @@ footer h6 {
     margin-top: 2px;
     color: rgb(60, 57, 57);
     font-size: 12px;
-    font-family: 'Anek Tamil', sans-serif;
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Anek Tamil", sans-serif;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Ubuntu", sans-serif;
 }
 
 footer h6 span {

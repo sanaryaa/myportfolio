@@ -35,12 +35,12 @@ function showCard(m) {
 }
 /*end of slider*/
 /*how user contact me via email*/
-function sendEmail(){
-    Email.send({
-        To : 'sanaryahamakarim1@gmail.com',
-        From : document.getElementById("email"),
-        }).then(()=>{
-            alert("mail sent successfully");
-        }
-        );
-}
+// function sendEmail(){
+//     Email.send({
+//         To : 'sanaryahamakarim1@gmail.com',
+//         From : document.getElementById("email"),
+//         }).then(()=>{
+//             alert("mail sent successfully");
+//         }
+//         );
+// }
