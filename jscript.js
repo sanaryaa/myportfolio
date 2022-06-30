@@ -19,7 +19,7 @@ function currCard(m) {
 }
 
 function showCard(m) {
-    let cards = document.getElementsByClassName("box");
+    let cards = document.getElementsByClassName("box-container");
     if (m < 0) {
         m = 0;
         

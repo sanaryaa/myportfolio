@@ -424,18 +424,16 @@ body {
 
 /*end of about me section*/
 /*start of skill section*/
-#skills {
+
+#skills{
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-left: 7%;
-    padding-right: 7%;
 }
-
-#skills h3 {
+#skills h3{
     font-size: 40px;
     font-family: "Andika New Basic", sans-serif;
     font-family: "Anek Tamil", sans-serif;
@@ -443,56 +441,97 @@ body {
     line-height: 5rem;
 }
 
-#skills .boxs {
-    width: 90%;
-    height: 80%;
+#skills  .boxs{
+    width: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-#skills .boxs .box {
-    width: 30%;
-    height: 70%;
-    text-align: center;
-    border-radius: 10px 45px 10px 45px;
-    background-color: #7e5d2a74;
-    padding-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: none;
+#skills .boxs .box-container{
+    width: 50%;
+    height: 100%;
 }
-
-#skills .boxs .box h4 {
-    font-size: 30px;
+#skills  .boxs button{
+    background-color: transparent;
+    border: none;
+}
+#skills .boxs .box-container  .box{
+    width: 60%;
+    height: 45%;
+    border: 1px solid rgba(187, 149, 96, 0.308);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    border-radius: 7px;
+}
+#skills .boxs .box-container  .box .caption{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#skills .boxs .box-container  .box .caption h5{
+    font-size: 25px;
     font-family: "Andika New Basic", sans-serif;
     font-family: "Anek Tamil", sans-serif;
     font-family: "Big Shoulders Display", cursive;
-    line-height: 3.5rem;
-    color: #30220c;
+    line-height: 2rem;
 }
-
-#skills .boxs .box p {
-    width: 60%;
-    margin: auto;
-    color: rgb(70, 70, 70);
-    font-size: 15px;
+#skills .boxs .box-container  .box .caption p{
+    font-size: 17px;
     font-family: "Anek Tamil", sans-serif;
     font-family: "Big Shoulders Display", cursive;
     font-family: "Ubuntu", sans-serif;
+    margin-top: 5%;
+    color: rgb(107, 107, 107);
 }
-
-#skills .boxs button {
-    border: none;
-    background-color: transparent;
+#skills .boxs .box-container .box .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-@media (max-width: 750px) {
-    #skills .boxs .box {
-        width: 45%;
+@media (max-width:1000px) {
+    #skills{
+        height: 110vh;
+    }
+    #skills h3{
+        font-size: 30px;
+        line-height: 3rem;
+    }
+    #skills .boxs .box-container{
+        width: 65%;
+        height: 100%;
+    }
+    #skills .boxs .box-container  .box{
+        width: 60%;
+        height: 50%;
+        flex-direction: column;
+    }
+    #skills .boxs .box-container  .box .caption{
+        width: 100%;
+        height: 50%;
+    }
+    #skills .boxs .box-container  .box .caption h5{
+        font-size: 20px;
+        line-height: 1rem;
+    }
+    #skills .boxs .box-container  .box .caption p{
+        font-size: 15px;
+        margin-top: 2.5%;
+    }
+    #skills .boxs .box-container .box .img{
+        width: 100%;
+        height: 30%;
     }
 }
-
 /*end of skill section*/
 /*start of project section*/
 #projects {
@@ -733,6 +772,7 @@ body {
     justify-content: center;
     background-color: black;
     margin-top: 5%;
+    /* background-image: url(https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif); */
 }
 
 #contact .left {
@@ -752,6 +792,10 @@ body {
     flex-direction: column;
     width: 25%;
     height: 100%;
+    background-image: url(https://static.wixstatic.com/media/6138c7_764a8157c52342c0b49df94a3d467770~mv2.gif);
+    background-position: 10% 25%;
+    background-repeat: no-repeat;
+    background-size: 20%;
 }
 
 #contact .left .content {
