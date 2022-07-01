@@ -551,6 +551,7 @@ body {
     }
 
     #skills .boxs .box-container  .box .caption h5{
+        padding-top: 5%;
         font-size:20px;
         line-height: 0.5rem;
     }
@@ -758,7 +759,9 @@ body {
     #projects {
         height: 100vh;
     }
-
+    #projects h3{
+        font-size: 25px;
+    }
     #projects .cards {
         height: 100%;
         flex-direction: column;
